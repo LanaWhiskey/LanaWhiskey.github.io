@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIT Real Time Bus Tracker</title>
+    <!-- MapBox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+       
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+
+    <link rel="stylesheet" href="./boston.css"/>
+  </head>
+  <body class="d-flex flex-column">
+    <main id="container">
+      <div id="map">
+        <!-- populated by JS -->
+      </div>
+        <div class="map-overlay top">
+            <div class="bgimg w-100 pb-4 px-4 d-flex align-items-center" >
+                <div class="container">
+                  <h1 class="main-title">MIT Animated Map Project</h1>
+                  <h4 class="subtitle">by Clifford Williams</h4>
+                  <p> Here you can watch the MBTA Routes 1,8,10,47 & 171 Bus Geographic location updated every 15 seconds </p>
+                  <a class="btn btn-secondary" href="https://CliffWhiskey.github.io" rel="nofollow" ><i class="bi bi-house-fill"></i> Home </a>
+                </div>
+                <footer class="footer mt-5">
+                    <div class="bg-secondary w-100">
+                      <div class="container">
+                        <p class="py-3 m-0 text-light">
+                          Buses Geolocation Data source:
+                            <a
+                            class="text-reset"
+                            href="https://mbta.com/"
+                            >https://mbta.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </footer>
+            </div>
+            <h2 class="no-buses">
+              <!-- populated by JS -->
+            </h2>
+        </div>
+    </main>
+  </body>
+  <script src="./boston.js"></script>
+</html>
