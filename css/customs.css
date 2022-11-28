@@ -1,0 +1,308 @@
+/* Progress Bar */
+.progress-bar {
+    border-radius:50px;
+}
+/* End of Progress Bar */
+
+/* logo slider */
+/* Slider code from solodev.com */
+.slick-slide {
+    margin: 0px 200px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+/* end logo slider */
+
+/* Hero Section */
+#hero .row{
+    width:75%;
+}
+/* End of hero Section */
+
+/* About Img */
+img.about{
+    max-width: 100%;
+    width: 90%;
+    border-radius: 200px 80px 80px 80px;
+    box-shadow: 0px 0px 15px 5px rgb(67 179 174 / 30%);
+    z-index: 2;
+}
+
+/* End About Img */
+/* Buttons */
+button{
+    background: #ff0066;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+button:hover{
+    background: #6600ff;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+.buttons{
+    margin:2em 0;
+}
+form button{
+    margin-top:3em;
+}
+/* End Buttons */
+
+.customer-logos{
+    margin-top:6em;
+}
+.section-title p{
+    margin: 2em 0;
+}
+
+/* Services logos */
+.services .iconbox-color i {
+    color: #6600ff;
+}
+  
+  .services .iconbox-color:hover .icon i {
+    color: #fff;
+}
+  
+  .services .iconbox-color:hover .icon path {
+    fill: #ff0066;
+}
+  
+/* End of Services Logos */
+
+/* Apellido */
+#hero h1 span,
+#hero p span{
+    font-weight: 700;
+}
+#hero h1 {
+    font-weight: 400;
+}
+/* End Apellido */
+
+/* Portfolio */ 
+/* lightbox */ 
+.gslide-description {
+    border-radius: 0 0 30px 30px;
+}
+.gslide-image img {
+    border-radius: 30px 30px 0 0;
+}
+.gslide-title {
+    text-align: center;
+}
+/* End lightbox */
+
+
+/* End Portfolio */
+
+/* Skills */
+p.skills-content {
+    text-align: center;
+}
+/* End SKills */
+
+/* footer logo */
+.logo img{
+    width: 30%;
+    height:30%;
+}
+/* End footer logo */
+
+/* Projects links */
+
+a.portfolio-details-lightbox{
+    color:#f06!important;
+}
+a.portfolio-details-lightbox:hover{
+    color:#60f!important;
+}
+
+
+/* Responsive Tablet */
+@media screen and (max-width: 1024px) {
+    img.about {
+        margin-left: 10%;
+        margin-bottom:2em;
+        width:80%;
+    }
+    .logo img{
+        width: 60%;
+    }
+    .youtube iframe{
+        width:80vw;
+        height:40vh;
+    }
+    #hero .social-links {
+        margin-left:5%;
+    }
+    #hero .social-links a {
+        margin-right:10px;
+    }
+    #hero .row {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+}
+/* End Tablet */
+
+/* Responsive Mobil */
+@media screen and (max-width: 430px) {
+    img.about {
+        margin-left: 5%;
+        margin-bottom:2em;
+    }
+    .logo img{
+        width: 90%;
+        height:90%;
+    }
+    .youtube iframe{
+        width:80vw;
+        height:20vh;
+    }
+    #hero .social-links {
+        margin-left:5%;
+    }
+    #hero .social-links a {
+        margin-right:10px;
+    }
+    #footer .social-links a {
+        width: 24px;
+        height: 24px;
+        font-size: 15px;
+        padding: 4px 0;
+    }
+
+}
+/* End Mobil */
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
